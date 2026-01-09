@@ -7,8 +7,8 @@ document.querySelector("#search").addEventListener("submit" , async (event) =>{
         document.querySelector("#weather").classList.remove("show");
         showAlert("Voce precisa digitar uma cidade...");
     }
-
-    const key = "e62c6ff8f0ccdb275ae5cca5aa221bd6";
+    // colocar your key!
+    // const key = "";
     const urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&units=metric&lang=pt_br`;
 
     const results = await fetch(urlApi);
@@ -31,7 +31,7 @@ document.querySelector("#search").addEventListener("submit" , async (event) =>{
     }else {
 
         document.querySelector("#weather").classList.remove("show");
-        showAlert("Nao foi possivel localizar");
+        showAlert("Não foi possivel localizar....");
     }
     
 

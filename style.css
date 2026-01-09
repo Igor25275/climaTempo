@@ -17,6 +17,7 @@ body {
     border-radius: 15px;
     padding: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
 
 }
 
@@ -62,6 +63,7 @@ body {
     text-align: center;
     margin-bottom: 5px;
     font-weight: 600;
+    
 }
 
 #temp {
@@ -73,6 +75,7 @@ body {
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    color: white;
 }
 
 #img_weather {
@@ -86,8 +89,9 @@ body {
 }
 
 #temp_description {
-    font-weight: 500;
+    font-weight: bolder;
     text-transform: capitalize;
+
 }
 
 #info {
@@ -133,5 +137,11 @@ body {
 
 #icon_tempWind {
     color: rgb(190, 190, 240);
+}
+
+#alert {
+    text-align: center;
+    margin: 15px;
+    font-weight: bolder;
 }
 
