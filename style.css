@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(98, 176, 221);
+}
+
+#container {
+    background-color: rgb(196, 222, 240);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: solid 1px #bdbdbd;
+    padding: 5px 12px;
+    border-radius: 15px;
+
+    input{
+        border: none;
+        background-color: transparent;
+        padding: 8px;
+        font-size: 16px;
+        width: 100%;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+}
+
+#weather {
+   display: none; 
+   margin-top: 20px;
+}
+
+#weather.show {
+    display: block;
+}
+
+
+#weather #tittle {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background:linear-gradient(rgb(98, 176, 221), rgb(255,255,255)) ;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#img_weather {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0, 0.2));
+}
+
+#temp_value {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+#temp_description {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.other_infos {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    gap: 10px;
+
+    h2 {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    i {
+        text-align: center;
+        font-size: 20px;
+        width: 20%;
+    }
+}
+
+#icon_tempMin {
+    color: red;
+}
+
+#icon_tempMax {
+    color: blue;
+}
+
+#icon_tempDrop {
+    color: rgb(0, 102, 255);
+}
+
+#icon_tempWind {
+    color: rgb(190, 190, 240);
+}
+
